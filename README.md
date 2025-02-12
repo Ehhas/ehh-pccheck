@@ -8,3 +8,7 @@ There are inbuild logs you just need to set a webhook config_server.lua file and
 
 pccheck [playerID]
 pccheckcancel [playerID]
+
+## dependencies
+
+ox_lib
