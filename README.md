@@ -11,5 +11,5 @@ pccheckcancel [playerID]
 
 ## dependencies
 
-ox_lib \n
+ox_lib,
 es_extended (ESX core)
