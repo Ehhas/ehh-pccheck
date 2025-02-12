@@ -92,7 +92,7 @@ lib.addCommand('pccheckcancel', {
         if Players[id] == true then
             lib.callback('ehh-pccheck:close-menu-for-player', id, function(result)
                 if result and Players[id] == true then
-                    SendToDiscord('Pc Check clear', '**Player:** '..id..'\n **name:** '..GetPlayerName(id)..'\n **License of the one that got summoned:** '..GetPlayerIdentifierByType(id, "license")..'\n **Who summoned:** '..source..'\n **Who summoned name:** '.. GetPlayerName(source)..'\n **License of the one who summoned:** '..GetPlayerIdentifierByType(id, "license"), 16711680)
+                    SendToDiscord('Pc Check clear', '**Player:** '..id..'\n **name:** '..GetPlayerName(id)..'\n **License of the one that got pc checked:** '..string.gsub(GetPlayerIdentifierByType(id, "license"), "license:", "")..'\n **Discord Id of the one that got pc checked:** '..string.gsub(GetPlayerIdentifierByType(id, "discord"), "discord:", "")..'\n **Who was pc checking:** '..AdminId..'\n **Who was pc checking name:** '.. GetPlayerName(AdminId)..'\n **License of the one who was pc checking:** '..string.gsub(GetPlayerIdentifierByType(AdminId, "license"), "license:", "")..'\n **Discord Id of the one that was pc checking:** '..string.gsub(GetPlayerIdentifierByType(AdminId, "discord"), "discord:", ""), 16711680)
                     Players[id] = nil
                     Notification({
                         title = 'Pc Check',
