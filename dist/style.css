@@ -1,0 +1,112 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Inter Variable', sans-serif;
+}
+
+html, body {
+    display: none;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+}
+
+.whole-menu {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(30, 30, 30, 0.75);
+    color: white;
+    border: solid rgba(255, 255, 255, 0.47), 1px;
+    max-width: 400px;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 10px;
+} 
+
+.text {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text-invite {
+    display: flex;
+    font-size: 11px;
+    background-color: white;
+    height: 30px;
+    max-width: 250px;
+    padding: 3px;
+    border: solid black 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+.invite {
+    display: flex;
+    color: black;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+    margin-left: 35px;
+}
+
+.invite-copy {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border: solid black 1px;
+    border-radius: 5px;
+    
+}
+
+.invite-copy:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.time-all {
+    display: flex;
+    height: 30px;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-text {
+    font-size: 11px;
+}
+
+.time {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -9px;
+}
+
+.Whole-time-invite {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    gap: 4px;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    margin-left: -18px;
+}
